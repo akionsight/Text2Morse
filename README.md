@@ -1,4 +1,4 @@
-# Text_to_morse
+# Text2Morse
 
  A simple text to morse converter for international morse code
  
