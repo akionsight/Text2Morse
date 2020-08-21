@@ -72,3 +72,67 @@ def international_morse_code_converter(text):
         morse_code = morse_code + morse + ' '
     return morse_code
 
+
+def american_morse_code(text):
+    american_morse_code = {
+        "a" : ".-",
+        "b" : "-...",
+        "c" : ".. .",
+        "d" : "-..",
+        "e" : ".",
+        "f" : ".-.",
+        'g' : "--.",
+        "h" : "--.",
+        "g" : "....",
+        "i" : "..",
+        "j" : "-.-.",
+        "k" : "-.-",
+        "l" : "⸺",
+        "m" : "--",
+        "n" : "-.",
+        "o" : ". .",
+        "p" : '....',
+        "q" : "..-.",
+        "r" : ". ..",
+        "s" : "...",
+        "t" : "-",
+        "u" : "..-",
+        "v" : "...-",
+        "w" : ".--",
+        "x" : ".-..",
+        "y" : ".. ..",
+        "z" : "... .",
+        "1" : ".--.",
+        "2" : "..-..",
+        "3" : "...-.",
+        "4" : "....-",
+        "5" : "---",
+        "6" : "......",
+        "7" : "--..",
+        "8" : "-....",
+        "9" : "-..-",
+        "0" : "⸻",
+        "." : "..--..",
+        "," : ".-.-",
+        ":" : "-.- . .",
+        "?" :  "-..-.",
+        "'" : "..-. .-..",
+        "-" : "... .-..",
+        "/" : "..- -",
+        "(" : "..... -.",
+        ")" : "..... .. ..",
+        '"' : "..-. -.",
+        "&" : ". ...",
+        "!" : "---.",
+        ";" : "... ..",
+        " " : "/"  
+    }
+
+    morse_code = ''
+    text = str(text)
+    for each_letter in text.lower():
+        morse = american_morse_code[each_letter]
+        morse_code = morse_code + morse + ' '
+    return morse_code
+
+# print(american_morse_code("I am a good boy/girl"))
